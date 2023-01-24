@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <link href="./styles.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Hello World!</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+
+      <div class="title-bar">
+        <div class="buttons-container">
+          <div class="minimize">_</div>
+          <div class="maximize">&#9633;</div>
+          <div class="close">x</div>
+        </div>
+      </div>
+
+      <div class="main">
+        <h1>Hello World!</h1>
+        <p>We are using Node.js <span id="node-version"></span>,</p>
+        <p>Chromium <span id="chrome-version"></span>,</p>
+        <p>and Electron <span id="electron-version"></span>.</p>
+      </div>
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
