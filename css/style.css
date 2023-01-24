@@ -1,0 +1,68 @@
+/* styles.css */
+/* Add styles here to customize the appearance of your app */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #24292e;
+  color: #ccc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.title-bar {
+  -webkit-app-region: drag;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #1f2428;
+  height: 40px;
+  margin-bottom: 5px;
+}
+.title-bar .buttons-container {
+  -webkit-app-region: no-drag;
+  -webkit-user-select: none;
+  display: flex;
+  flex-direction: row;
+}
+.title-bar .buttons-container .close,
+.title-bar .buttons-container .maximize,
+.title-bar .buttons-container .minimize {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ddd;
+  font-size: 20px;
+}
+.title-bar .buttons-container .close:hover {
+  background-color: rgb(105, 0, 0);
+}
+.title-bar .buttons-container .minimize:hover,
+.title-bar .buttons-container .maximize:hover {
+  background-color: #24292e;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: calc(100vh - 40px);
+  overflow: auto;
+}
+.main::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+.main::-webkit-scrollbar-thumb {
+  background-color: #343b42;
+}
+.main::-webkit-scrollbar-corner {
+  background: #24292e;
+}/*# sourceMappingURL=style.css.map */
