@@ -7,7 +7,7 @@ Its only intent is to provide a starting ground with the following :
 - Custom title bar
 - Custom scroll bars
 
-![Screenshot from 2023-01-17 09-35-58](https://user-images.githubusercontent.com/104163526/212927176-07870f97-ad23-4ab5-a9b3-dca45ab9c409.png)
+![Screenshot from 2023-01-25 19-54-19](https://user-images.githubusercontent.com/123499791/214730633-61327c7b-03ef-4c81-8c7c-e45afe9c4357.png)
 
 
 ## To Use
@@ -16,9 +16,9 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/1135623/electron-wayland.git
-# Go into the repository
-cd electron-wayland
+git clone https://github.com/oli-moreau/electron-quick-start-wayland.git
+# Go into the directory
+cd electron-quick-start-wayland
 # Install dependencies
 npm install
 # Run the app
