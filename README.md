@@ -7,8 +7,7 @@ Its only intent is to provide a starting ground with the following :
 - Custom title bar
 - Custom scroll bars
 
-![Screenshot from 2023-01-25 19-54-19](https://user-images.githubusercontent.com/123499791/214730633-61327c7b-03ef-4c81-8c7c-e45afe9c4357.png)
-
+![Screenshot from 2023-01-27 07-31-58](https://user-images.githubusercontent.com/123499791/215087860-93d41476-b4a5-426c-b725-f9fff2707d5b.png)
 
 ## To Use
 
