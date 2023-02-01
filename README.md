@@ -6,6 +6,7 @@ Its only intent is to provide a starting ground with the following :
 - Wayland support
 - Custom title bar
 - Custom scroll bars
+- Running shell commands with a button
 
 ![Screenshot from 2023-02-01 16-49-32](https://user-images.githubusercontent.com/123499791/216172214-5c02ce7f-7d20-4acb-842f-698bc8133129.png)
 
