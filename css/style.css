@@ -56,6 +56,20 @@ body {
   height: calc(100vh - 40px);
   overflow: auto;
 }
+.main .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #22344b;
+  -webkit-user-select: none;
+  margin: 10px;
+}
+.main .button:hover {
+  cursor: pointer;
+}
 .main::-webkit-scrollbar {
   width: 15px;
   height: 15px;

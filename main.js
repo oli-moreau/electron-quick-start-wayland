@@ -1,4 +1,5 @@
 const {app, BrowserWindow, ipcMain} = require('electron')
+const { exec } = require("child_process");
 const path = require('path')
 
 app.disableHardwareAcceleration()
@@ -39,6 +40,17 @@ app.whenReady().then(() => {
   })
 })
 
+//Run shell command
+ipcMain.on("run-command", (event, command) => {
+  exec(command, (error, stdout, stderr) => {
+    if (error) {
+      console.error(`exec error: ${error}`)
+      return;
+    }
+    event.sender.send("command-result", stdout)
+  })
+})
+
 //Close button
 ipcMain.on('close', () => {
   app.quit()
@@ -47,3 +59,6 @@ ipcMain.on('close', () => {
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') app.quit()
 })
+
+
+

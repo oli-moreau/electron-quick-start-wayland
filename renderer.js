@@ -24,7 +24,16 @@ function closeApp() {
   ipc.send('close')
 }
 
-//Events
+//Title bar events
 document.querySelector('.close').addEventListener('click', closeApp)
 document.querySelector('.maximize').addEventListener('click', maximizeApp)
 document.querySelector('.minimize').addEventListener('click', minimizeApp)
+
+//Send a command with ipc
+document.querySelector('.cmd1').addEventListener("click", () => {
+  ipc.send("run-command", "ls -l");
+})
+//Output of the command
+ipc.on("command-result", (event, result) => {
+  console.log(result);
+})
