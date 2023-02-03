@@ -8,20 +8,27 @@ Its only intent is to provide a starting ground with the following :
 - Custom scroll bars
 - Running shell commands with a button
 
-![Screenshot from 2023-02-01 16-49-32](https://user-images.githubusercontent.com/123499791/216172214-5c02ce7f-7d20-4acb-842f-698bc8133129.png)
+![Screenshot from 2023-02-03 12-43-27](https://user-images.githubusercontent.com/123499791/216671796-9112ce1a-f583-43d5-9317-da763c2bb41a.png)
 
 ## To Use
 
 To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
+
+Clone this repository
 ```bash
-# Clone this repository
 git clone https://github.com/oli-moreau/electron-quick-start-wayland.git
-# Go into the directory
+```
+Go into the directory
+```bash
 cd electron-quick-start-wayland
-# Install dependencies
+```
+Install dependencies
+```bash
 npm install
-# Run the app
+```
+Run the app
+```bash
 npm start
 ```
 
